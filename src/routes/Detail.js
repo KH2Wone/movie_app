@@ -17,11 +17,11 @@ class Detail extends React.Component {
                     <h1 className="detail_poster">
                     <img src={location.state.poster} alt={location.state.title} title={location.state.title} />
                     </h1>
-                    <h2>{location.state.title} <i>({location.state.year}</i>)</h2>
+                    <h2 className="detail_title">{location.state.title} ({location.state.year})</h2>
                     <ul className="detail_genres">
                         {location.state.genres.map((genre, index) => <li className="detail_genre" key={index}>{genre}</li>)}
                     </ul>
-                    <p className="summary">
+                    <p className="detail_summary">
                         {location.state.summary}
                     </p>
                 </div>

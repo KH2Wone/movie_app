@@ -1,0 +1,54 @@
+.detail_wrap {
+    width: 100%;
+}
+
+
+.detail_poster {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 0px;
+    line-height: 0;
+}
+
+.detail_poster:after {
+    content: '';
+    width: 230px;
+    height: 345px;
+    display: block;
+    background-color: #a3c7e0;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+}
+
+.detail_title {
+    text-align: center;
+    margin: 50px 0px 30px;
+    color: #333;
+}
+
+.detail_genres {
+    padding: 0px 5%;
+    text-align: center;
+}
+
+.detail_genre {
+    display: inline-block;
+    background-color: #fff;
+    color: #a3c7e0;
+    font-weight: 500;
+    border: 1px solid #a3c7e0;
+    border-radius: 30px;
+    padding: 10px 15px;
+    margin: 5px 3px;
+}
+
+.detail_summary {
+    padding: 0px 10%;
+    line-height: 2em;
+    color: rgb(131, 131, 131);
+}
