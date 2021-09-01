@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import Movie from "../components/Movie";
 import "./Home.css";
+import loading from "./loading.gif";
 
 class Home extends React.Component {
   state = {
@@ -32,7 +33,7 @@ class Home extends React.Component {
     return <section className="container"> {
       isLoading ? (
       <div className="loader">
-        <span className="loader_text">Loading...</span>
+        <img src={loading} alt="loading" title="loading" />
       </div>
       ) : (
       <div className="movies">
